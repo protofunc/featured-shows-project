@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    color: white;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 1em;
+    margin-top: 1%;
+    padding-inline: 2em;
+}
