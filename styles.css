@@ -1,22 +1,140 @@
+/* Global configs */
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p, h6 {
+    margin: 0;
+}
+/* Navigation bar */
 .nav-container {
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    align-items: baseline;
+    height: 5em;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding-top: 1em;
+ }
+
+.nav-container ul {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+
+.nav-container li {
+    list-style: none;
+    padding-inline: 2em;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Background image and overlay text. */
+.image-container {
+    position: relative;
+    text-align: center;
     color: white;
 }
 
-ul {
-    display: flex;
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5em;
+    white-space: nowrap;
 }
 
-li {
-    list-style: none;
-    margin-right: 1em;
-    margin-top: 1%;
-    padding-inline: 2em;
+/* Main container */
+.container-md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 65%;
+    height: 10em;
+}
+
+/* Date container */
+.date {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 2em;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    background-color: rgb(250, 250, 250);
+}
+
+.date h6 {
+    margin-left: 2em;
+}
+
+/* Feature container */
+.feat-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 1em;
+    margin-top: 2em;
+    width: 75%;
+    height: 10em;
+    white-space: nowrap;
+}
+
+.feat-pic, .feat-text {
+    justify-self: start;
+}
+
+/* Feature pic container */
+.feat-pic {
+    height: 8em;
+}
+
+.feat-pic img {
+    max-height: 100%;
+}
+
+/* Feature text container */
+.feat-text {
+    line-height: 1.9;
+}
+.feat-text strong {
+    font-weight: 400;
+    font-size:x-large;
+}
+
+.feat-button {
+    justify-self: end;
+}
+
+button {
+    background: #f1c75a;
+    border-color: #83817b #9c7e31 #846a29;
+    border-top-color: rgb(168, 135, 52);
+    border-right-color: rgb(156, 126, 49);
+    border-bottom-color: rgb(132, 106, 41);
+    border-left-color: rgb(156, 126, 49);
+    width: 6em;
+    height: 2.5em;
+    border-width: 1px;
+    border-radius: 1px;
+    border-style: solid;
+    cursor: pointer;
 }
