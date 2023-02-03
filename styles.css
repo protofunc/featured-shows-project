@@ -54,6 +54,7 @@ hr {
     position: relative;
     text-align: center;
     color: white;
+    background-color: black;
 }
 
 .overlay-text {
@@ -74,8 +75,6 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 3em; */
-    /* margin-bottom: 1em; */
     width: 65%;
 }
 
@@ -129,6 +128,7 @@ hr {
     font-size:x-large;
 }
 
+/* Button configs */
 .feat-button {
     justify-self: end;
 }
