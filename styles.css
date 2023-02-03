@@ -15,6 +15,12 @@ a:hover {
 p, h6 {
     margin: 0;
 }
+
+hr {
+    width:48%;
+    margin:0 auto;
+}
+
 /* Navigation bar */
 .nav-container {
     display: flex;
@@ -59,15 +65,18 @@ p, h6 {
     white-space: nowrap;
 }
 
-/* Main container */
+.main-content {
+    margin-top: 5em;
+    margin-bottom: 5em;
+} 
+/* Container for image, text, and button */
 .container-md {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
-    margin-bottom: 2em;
+    /* margin-top: 3em; */
+    /* margin-bottom: 1em; */
     width: 65%;
-    height: 10em;
 }
 
 /* Date container */
